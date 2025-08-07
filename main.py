@@ -20,6 +20,7 @@ def main():
                 return
         pygame.Surface.fill(screen, color=(0,0,0))
         poor_soul.draw(screen)
+        poor_soul.update(dt)
         pygame.display.flip()
         game_clock.tick(60)
         dt = game_clock.tick(60)
